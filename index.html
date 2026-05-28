@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Titulo de la página -->
+    <title>AdoptaMe</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- ==== HEADER ==== -->
+    <header>
+      <!-- Logo del sitio -->
+      <div class="logo">
+        <img src="assets/images/Adopta_Me.png" alt="logo" />
+      </div>
+      <!-- Barra de navegación -->
+      <nav>
+        <ul>
+          <li><a href="#Servicios">Servicio</a></li>
+          <li><a href="#Contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- ==== MAIN ==== -->
+    <main>
+      <!-- Letrero de bienvenida -->
+      <section class="bienvenida">
+        <h2>¡Bienvenidos!</h2>
+      </section>
+      <!-- Portada con imágen de mascotas -->
+      <section class="portada">
+        <img src="assets/images/portada.png" alt="Imagen de portada" />
+      </section>
+      <!-- Formulario -->
+      <section id="Servicios" class="formulario">
+        <div class="mascotas">
+          <h3>Mascotas</h3>
+          <img src="assets/icons/vineta-celeste.svg" />
+        </div>
+        <form>
+          <!-- Selección de mascota -->
+          <div class="campo">
+            <label>Mascota<span class="asterisco">*</span></label>
+            <div class="radio">
+              <!-- Opción gato -->
+              <input
+                type="radio"
+                id="gato"
+                name="mascota"
+                value="gato"
+                required
+              />
+              <label for="gato">Gato</label>
+
+              <!-- Opción perro -->
+              <input
+                type="radio"
+                id="perro"
+                name="mascota"
+                value="perro"
+                required
+              />
+              <label for="perro">Perro</label>
+            </div>
+          </div>
+
+          <!-- Campo nombre -->
+          <div class="campo">
+            <label for="nombre">Nombre<span class="asterisco">*</span></label>
+            <input id="nombre" type="text" required />
+          </div>
+
+          <!-- Campo apodo -->
+          <div class="campo">
+            <label for="apodo">Apodo<span class="asterisco">*</span></label>
+            <input id="apodo" type="text" required />
+          </div>
+
+          <!-- Campo edad -->
+          <div class="campo">
+            <label for="edad"
+              >Edad aproximada<span class="asterisco">*</span></label
+            >
+            <input id="edad" type="text" required />
+          </div>
+
+          <!-- Campo sexo -->
+          <div class="campo">
+            <label for="sexo">Sexo</label>
+            <input id="sexo" type="text" />
+          </div>
+
+          <!-- Campo descripcion -->
+          <div class="campo">
+            <label for="descripcion"
+              >Descripción física<span class="asterisco">*</span></label
+            >
+            <input id="descripcion" type="text" />
+          </div>
+
+          <!-- Campo caracteristicas -->
+          <div class="campo">
+            <label for="caracteristicas">Características</label>
+            <select id="caracteristicas">
+              <option>Ninguna</option>
+              <option>Color principal</option>
+              <option>Peso</option>
+              <option>Estado de salud</option>
+              <option>Vacunado</option>
+              <option>Raza</option>
+            </select>
+          </div>
+
+          <!-- Campo detalle -->
+          <div class="campo">
+            <label for="detalle">&nbsp;</label>
+            <input
+              id="detalle"
+              class="caract"
+              type="text"
+              placeholder="Ingresar característica"
+            />
+          </div>
+
+          <!-- Campo foto -->
+          <div class="campo">
+            <label for="foto">Fotos</label>
+
+            <div class="foto">
+              <label for="foto">
+                Seleccionar archivo
+                <!-- Input oculto para darle estilo propio -->
+                <input id="foto" type="file" hidden />
+              </label>
+
+              <span>No se eligió archivo</span>
+            </div>
+          </div>
+
+          <!-- Acciones finales -->
+          <div class="acciones">
+            <p>Los campos marcados con (*) son obligatorios</p>
+
+            <button class="enviar" type="submit">ENVIAR</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <!-- ==== FOOTER ==== -->
+    <footer id="Contacto">
+      <div class="info">
+        <div class="contactanos">
+          <!-- Titulo del footer -->
+          <h2>Contactanos</h2>
+          <img src="assets/icons/vineta-blanca.svg" />
+        </div>
+
+        <!-- Texto descriptivo -->
+        <p class="texto">
+          Ofrecemos un servicio pensado para el bienestar de las mascotas,
+          facilitando la comunicación entre dueños, refugios y familias
+          interesadas en adoptar.
+        </p>
+
+        <!-- Contactos -->
+        <div class="contactos">
+          <!-- Telefono -->
+          <a class="contacto" href="tel:+5491151620516">
+            <img src="assets/icons/tel.svg" alt="telefono" />
+
+            <div>
+              <h4>Teléfono</h4>
+              <p>+54 9 11 5162 0516</p>
+            </div>
+          </a>
+
+          <!-- Mail -->
+          <a class="contacto" href="mailto:info@adopta_me.com">
+            <img src="assets/icons/mail.svg" alt="mail" />
+
+            <div>
+              <h4>Mail</h4>
+              <p>info@adopta_me.com</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Linea divisora -->
+        <div class="linea"></div>
+
+        <!-- Copyright -->
+        <p class="copyright">
+          Copyright © 2021. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

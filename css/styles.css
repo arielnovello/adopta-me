@@ -1,0 +1,410 @@
+/* ==== RESET GENERAL ==== */
+* {
+  font-family: "Arial";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Scroll suave entre secciones */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ==== HEADER ==== */
+header {
+  background-color: rgb(52, 154, 243);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  gap: 20px;
+}
+
+/* Logo de la página */
+.logo img {
+  width: 220px;
+  height: auto;
+}
+
+/* ==== BARRA DE NAVEGACIÓN ==== */
+
+/* Lista de navegación */
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+/* Links del menú */
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: rgb(10, 53, 92);
+}
+
+/* ==== MAIN ==== */
+
+/* Texto bienvenida */
+.bienvenida {
+  font-size: 30px;
+  text-align: center;
+  color: rgb(52, 154, 243);
+  padding: 50px;
+  background-color: white;
+}
+
+.portada {
+  background-color: rgb(230, 234, 236);
+  overflow: hidden;
+}
+
+/* Imágen de animales */
+.portada img {
+  width: 100%;
+  height: auto;
+  transition: 0.5s;
+}
+
+.portada img:hover {
+  transform: scale(1.06);
+}
+
+/* ==== FORMULARIO ==== */
+
+/* Color de fondo */
+main {
+  background-color: rgb(230, 234, 236);
+}
+
+/* Titulo mascotas */
+.mascotas {
+  display: flex;
+  flex-direction: column;
+}
+
+/* viñeta decorativa */
+.mascotas img {
+  width: 340px;
+  margin-bottom: 20px;
+  margin-top: -7px;
+  margin-left: -82px;
+}
+
+/* Contenedor del formulario */
+.formulario {
+  padding: 20px;
+}
+
+/* Título mascotas */
+.formulario h3 {
+  font-size: 28px;
+
+  color: rgb(52, 154, 243);
+}
+
+/* Cada campo del formulario */
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Radios gato/perro */
+.radio {
+  display: flex;
+  gap: 15px;
+}
+
+/* Formulario completo */
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 100px;
+}
+
+/* Labels */
+.formulario label {
+  font-weight: bold;
+}
+
+.radio label {
+  font-weight: normal;
+}
+
+/* Estilo de inputs, selects, archivos */
+.formulario input,
+select,
+.foto {
+  padding: 10px;
+  border: 1px solid #ced1d3;
+  border-radius: 10px;
+  background-color: rgb(230, 234, 236);
+}
+
+.campo select {
+  cursor: pointer;
+}
+
+/* Input de detalle */
+.caract {
+  font-size: 15px;
+}
+
+/* Contenedor del input file */
+.foto {
+  gap: 70px;
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+}
+
+/* Color del asterisco */
+.asterisco {
+  color: rgb(25, 115, 194);
+}
+
+/* Texto obligatorio */
+.formulario p {
+  color: rgb(52, 154, 243);
+  font-weight: bold;
+}
+
+/* Botón enviar */
+.enviar {
+  background-color: rgb(52, 154, 243);
+  color: white;
+  padding: 20px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.enviar:hover {
+  background-color: rgb(25, 115, 194);
+  transform: scale(1.03);
+}
+
+.acciones {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* ==== FOOTER ==== */
+
+footer {
+  background-color: rgb(230, 234, 236);
+
+  /* Imagen de fondo */
+  background-image: url("../assets/images/footer.png");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+
+  color: white;
+
+  padding: 120px 25px 40px;
+}
+
+/* Contenedor principal del footer */
+.info {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+/* Viñeta decorativa*/
+.contactanos img {
+  width: 70px;
+  margin-top: -20px;
+  margin-bottom: 30px;
+}
+
+/* Título footer */
+.info h2 {
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+/* Texto descriptivo */
+.texto {
+  line-height: 1.7;
+}
+
+/* Contenedor contactos */
+.contactos {
+  display: flex;
+  gap: 50px;
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* Cada contacto */
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.contacto:hover {
+  transform: scale(1.05);
+}
+
+/* Iconos contacto */
+.contacto img {
+  width: 55px;
+  height: 55px;
+}
+
+/* Subtitulos contacto */
+.contacto h4 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+/* Línea divisoria */
+.linea {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+
+  margin-bottom: 25px;
+}
+
+/* Copyright */
+.copyright {
+  font-size: 14px;
+}
+
+/* Ajusto la tabla a 2 columnas para tablets */
+@media (min-width: 768px) {
+  .formulario form {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  /* Acciones ocupan toda la fila */
+  .acciones {
+    grid-column: span 2;
+  }
+}
+
+/* Estilos completo para pantallas grandes */
+@media (min-width: 1024px) {
+  /* Header horizontal */
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 150px;
+  }
+
+  .logo img {
+    width: 180px;
+    height: auto;
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  nav ul li a {
+    font-size: 19px;
+  }
+
+  .bienvenida {
+    font-size: 40px;
+  }
+
+  .formulario h3 {
+    font-size: 40px;
+    margin-top: -50px;
+  }
+
+  .mascotas img {
+    width: 500px;
+    margin-left: -120px;
+    margin-top: -10px;
+    margin-bottom: 30px;
+  }
+
+  /* Contenedor formulario */
+  .formulario {
+    background-color: rgb(230, 234, 236);
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px;
+  }
+
+  /* Formulario a 3 columnas */
+  .formulario form {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
+  .radio {
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  .foto {
+    font-size: 13px;
+    gap: 10px;
+    padding: 11px;
+  }
+
+  /* Acciones horizontales */
+  .acciones {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+
+    grid-column: span 3;
+  }
+
+  .enviar {
+    width: 20%;
+  }
+
+  .texto {
+    line-height: 1.7;
+    max-width: 50%;
+  }
+
+  /* Contactos horizontales */
+  .contacto {
+    flex-direction: row;
+    align-items: center;
+  }
+}
